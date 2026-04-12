@@ -1591,12 +1591,6 @@ body {
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
-   border: 2px dashed var(--border-color);
-   border-radius: 2px;
-   background: rgba(0, 15, 30, 0.4);
-   gap: 0.5rem;
-   padding: 1.5rem;
-   transition: border-color var(--transition-speed) ease;
 }
 
 .featured-media .media-image {
