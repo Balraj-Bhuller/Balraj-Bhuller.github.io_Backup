@@ -1599,3 +1599,73 @@ body {
    height: auto;
    object-fit: contain;
 }
+
+/* --- Arsenal Sections (Used/Unused grouping) --- */
+.arsenal-section {
+    margin-bottom: 2.5rem;
+}
+
+.arsenal-section-title {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--accent-primary);
+    text-shadow: 0 0 8px var(--accent-glow);
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* --- Card Status Badge --- */
+.card-status-badge {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0.4rem 0.7rem;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.card-status-badge.status-active {
+    background: rgba(0, 255, 136, 0.15);
+    color: #00ff88;
+    border: 1px solid #00ff88;
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.3);
+}
+
+.card-status-badge.status-inactive {
+    background: rgba(255, 51, 85, 0.15);
+    color: #ff3355;
+    border: 1px solid #ff3355;
+    box-shadow: 0 0 8px rgba(255, 51, 85, 0.3);
+}
+
+/* --- Card styling adjustments for status --- */
+.arsenal-card {
+    position: relative;
+    transition: all var(--transition-speed) ease;
+}
+
+.arsenal-card.used {
+    border-left: 3px solid #00ff88;
+}
+
+.arsenal-card.used:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.2), inset 0 0 15px rgba(0, 255, 136, 0.05);
+    border-left-color: #00ff88;
+}
+
+.arsenal-card.unused {
+    border-left: 3px solid #ff3355;
+    opacity: 0.75;
+}
+
+.arsenal-card.unused:hover {
+    box-shadow: 0 0 20px rgba(255, 51, 85, 0.2), inset 0 0 15px rgba(255, 51, 85, 0.05);
+    border-left-color: #ff3355;
+}
